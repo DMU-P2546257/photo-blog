@@ -1,0 +1,116 @@
+p{
+  font-size: 1.4em; /* The text is set the font size 1.4em so the text isn't too small or too big but easy to read */
+}
+h1{
+  font-size: 5em; /* The heading is set to font 5em to stand out from text */
+}
+body{
+  background-color: #F4F4F4; /* This changes the whole background of website black. Black to fit the colour schmeme with purple and white because in John Wick
+  movies they use these colours in the movie and advertising. */
+  color: black;
+}
+.side-by-side-view{
+  display: flex;
+}
+.div-left{
+  float: left;
+}
+.div-right{
+  float: right;
+}
+.center{ /* This puts the main heading, subheadings and footer at the centre of the website. */
+  text-align: center;
+}
+.footer{
+  margin-top: 50%;
+}
+.footer-text{
+  font-size: 1em; /* Chosen this size because footer in other websites are small text at the bottom */
+  background-color: gray; /* The grey colour for background of footer to make the text stand out and to show it is sepurate to the main page.*/
+  color: white; /* The black stands out from the grey background footer */
+  padding: 10px; /* The padding creats space betwwen text. There is 10px between text so it is easier to read. */
+}
+.header{ /* This is to control placement of headings and subheading with size, font and central. */
+  text-transform: uppercase;
+  font-size: 2em;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 12px;
+}
+.header-left{
+  font-family: 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  margin-right: -20px;
+  font-size: 1.5em;
+}
+.sub-header{
+  letter-spacing: 12px;
+  padding-bottom: 12px;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0; /* No need for spacing */
+  overflow: hidden;	/* "ul" tag is for the nagvation bar so that the viewers can nagvatage to Home and Cast pages. The overflow is hidden so
+    that the navigtion bar stays in one place if the website is view at different viewpoints. The colours are consistant
+    with the colour schmeme of the website */
+  background-color: black;
+}
+li{
+  float: left; /* This puts the navigtion tabs to the left side of page */
+}
+li a{
+  display: block;
+  color: white; /* chosen colour white becuase I am using three colours for the website white, purple and black. */
+  text-align: center; /*aligns the text to centre of website. */
+  padding: 14px 16px; /* Padding is how much space between the text to stop from overlap and clump together. */
+  text-decoration: none; /* This is a link but don't want select navigation bar so change the name to "none" */
+  font-weight: bold; /* This makes the text bolder so can be easier to see. */
+  font-size: 1.5em; /* This size is clear for viewers to see text. */
+  text-transform: uppercase;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 6px;
+}
+li a:hover{ /* Hover is to highlight the navigation buttons. The viewers can see what tabs they want to select by hovering with
+the computer mouse over the tabs .*/
+  background-color: #F4F4F4;
+  color: black;
+}
+.selected-tab { /* selected tab is to show what page the viewer is looking at. The darker purple tells what page has been selected */
+  background-color: #F4F4F4;
+  color: black;
+}
+.slideshow-images{ /*This controls the size of the slideshow. */
+  max-height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 4px;
+}
+.gallery-row { /* This groups the photos and puts them in order of three cross and four images down. */
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+* {
+  box-sizing: border-box;
+}
+/* Create two equal columns that sits next to each other */
+.gallery-column {
+  -ms-flex: 33%; /* IE 10 */
+  flex: 33%;
+  padding: 0 4px;
+}
+.gallery-column img { /* This is to resize a single imagie because the image was too big. */
+  margin-top: 8px;
+  vertical-align: middle;
+}
+.container {
+  margin: auto;
+  width: 90%;
+}
+.portrait-container {
+  display: flex;
+  height: 300px;
+  padding: 25px;
+}
